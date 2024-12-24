@@ -1,0 +1,43 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+#game{
+    height: 200px;
+    border: 1px solid black;
+    margin: auto;
+}
+.car {
+    width: 51px;
+    height: 50px;
+}
+#character{
+    width: 50px;
+    height: 50px;
+    position: relative;
+    top: 160px;
+}
+#block{
+    width: 20px;
+    height: 20px;
+    top: 160px;
+    position: absolute;
+    left: 480px;
+    animation: block 1s infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes block{
+    0%{left:520px;}
+    100%{left: -40px;}
+}
+
+.animate{
+    animation: jump 500ms 1;
+}
+@keyframes jump{
+    0%{top: 150px;}
+    30%{top: 100px;}
+    70%{top: 100px;}
+    100%{top: 150px;}
+}
